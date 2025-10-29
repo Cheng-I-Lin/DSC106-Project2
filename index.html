@@ -183,7 +183,11 @@
             yet opposite trend of negative net imports, averaging to -61.0 million tonnes, which indicates 
             a net export. The trend indicates that when imports in developed countries increase, so does 
             exports in developing countries, evidently denoting the correlation of carbon outsourcing of 
-            developed nations from developing nations (developed and developing status based on <a href=""></a>).
+            developed nations from developing nations and suggesting a larger carbon emission for developed
+            countries through imports (developed and developing status based on 
+            <a href="https://www.isbd.org/Files/Admin/Dues-by-Country-Full-List-2025-for-website.pdf">
+                World Bank
+            </a> classifications).
 
             <br>
             <span>
@@ -284,9 +288,17 @@
         <h3>AGAINST the Proposition</h3>
 
         <figure>
-          <img src="IMAGE_FILENAME" alt="" />
+          <img src="against_proposition.png" alt="Developed and developing countries domestic carbon emission share trend from 1995 to 2021" />
           <figcaption>
-            
+            From 1995 to 2021, the domestic carbon share ratio — defined as domestic production divided by total carbon activity (production + imports − exports) — 
+            for both developed and developing countries are extremely similar: close to 1. This value indicates that most emissions originate domestically 
+            rather than through trade (imports & exports). With the largest gap being only 0.11, this suggests that despite the evidence of outsourcing in 
+            trade-specific metrics, developed and developing countries contribute similarly to global emissions.
+            (developed and developing status based on 
+            <a href="https://www.isbd.org/Files/Admin/Dues-by-Country-Full-List-2025-for-website.pdf">
+                World Bank
+            </a> classifications).
+
             <br>
             <span>
                 *Data collected by the International Monetary Fund (IMF) and the Organisation for Economic 
@@ -299,24 +311,60 @@
 
         <ul>
             <li>
-              RATIONALE_1
+              Ratio Aggregation
               <ul>
-                  <li>Score: 0 (Earnest)</li>
-                  <li></li>
+                  <li>Score: -2 (Deceptive)</li>
+                  <li>
+                    By switching from net imports to shares of carbon production, we effectively changed the <em>perspective</em> of the data.
+                    This means that the attention of the viewers is now shifted away from imports and exports (carbon outsourcing), and instead 
+                    highlights the carbon production ratio of developed and developing countries. What this does is that it provides a new way 
+                    of calculating the data to emphasize proportionality rather than volume, downplaying the disparities in absolute emissions. 
+                    This makes inequalities seem smaller than they actually are, persuading the viewers that even with the carbon outsourcing of
+                    developed countries, they are still generally on equal terms with developing countries when it comes to carbon emissions.
+                    We have also tried many different aggregations of the data, such as using rolling averages and changing country classifications,
+                    but this is by far the most effective portrayal of data that depicts the sameness in carbon production levels. However, a 
+                    potential downside is that viewers may find ratios of over 1 confusing and difficult to interpret. This unusal high value is
+                    due to the equation of subtracting exported carbon when calculating domestic production. With high exports, the denominator becomes
+                    smaller and thus the calculated value becomes larger (over 1), which is counter intuitive to how a ratio or percentage works.
+                  </li>
               </ul>
             </li>
             <li>
-              RATIONALE_1
+              Y-Axis Manipulation
               <ul>
-                  <li>Score: 0 (Earnest)</li>
-                  <li></li>
+                  <li>Score: -1.5 (Deceptive)</li>
+                  <li>
+                    Using an extended y-axis, all the values from the graph are compressed together, creating a visualization
+                    that both trends are similar as they are closer to one another. This better persuades the argument that
+                    the differences between developed and developing countries are minor (thus carbon outsourcing do not create
+                    major impacts) as the viewers can easily tell that 
+                    the two trends are plotted in similar regions of the y-axis. Besides the extension of the y-axis, we also
+                    thought about the compression of the y-axis to make the differences seem larger than usual. By doing so, we can 
+                    argue that developed countries have less carbon production than developing countries so that they
+                    are indeed eco-friendly. However, we thought that it was ultimately better to indicate <em>sameness</em> as greater
+                    production share would mean greater export (value > 1: exports dominate net trade so domestic production exceeds net footprint)
+                    that help argue for, not against, the proposition of carbon outsourcing. Although this axis manipulation helps 
+                    persuade viewers upon first glance, experienced viewers may catch on this deception quickly, and may thus lose
+                    credibility in our argument.
+                  </li>
               </ul>
             </li>
             <li>
-              RATIONALE_1
+              Subtitle Information
               <ul>
-                  <li>Score: 0 (Earnest)</li>
-                  <li></li>
+                  <li>Score: -1.5 (Deceptive)</li>
+                  <li>
+                    Through the utilization of subtitles, we only included key information that would help the viewers see the graph
+                    through the lens that imports and exports (and thus carbon outsourcing) are nonexistent. By only showing what the 
+                    ratio value of close to 1 indicates, viewers are effectively drawn to the fact that all emissions came from domestic production,
+                    not from imports or exports. This helps strengthen the idea that the emission levels of developed and developing countries 
+                    are similar while removing the idea that developed countries outsources carbon from developing countries. Basically, it hides
+                    the meaning behind the rato values that are below (import) or above (export) 1 so that the viewers are only focused on the simialrity of
+                    eco-friendly carbon production, and not on carbon outsourcing. However, experienced viewers may still notice this trend of 
+                    ratio values, thus losing credibility for our plot. Although we tried to use a horizontal dashed line to indicate the ratio value of 1 and
+                    what it represents, we found that it might cause overplotting issues as we already squished both lines into a manipulated y-axis. Therefore,
+                    adding an extra line in the middle of the tiny space between the two compressed trends would make it extremely difficult to see and comprehend.
+                  </li>
               </ul>
             </li>
         </ul>
@@ -336,20 +384,28 @@
             despite the imports and exports. For instance, we thought of using rolling averages to minimize 
             peaks, changing country classification to include china and india as their gross outputs are 
             considered developed even though that isn't the case per capita, and altering y-axis values 
-            to percent changes.
+            to percent changes. At the end, we settled for using domestic emission production shares. This
+            is because, surprisingly, both developed and developing countries have similar domestic carbon 
+            emission shares, meaning that changing the aggregation calculation technique to carbon production
+            shares generates the insight that developed countries are indeed eco-friendly.
         </p>
         <p>
             We think that the definition of “ethical analysis and visualization” is the development of 
-            visualizations through fair, thoughtful, and truthful representations. Although it is 
-            difficult to draw any bounds on what is considered to be “fair” and “truthful” when one is 
-            trying to persuade the other without misleading them, I think that one bound is that 
-            visualizations should include almost all valid datapoints. This is because in the case of 
-            Graph 3, I purposefully removed a lot of data from 1970 to 2004 just to show a trend that 
-            occurred for a short period of time instead of showing the entire picture, which can mislead 
-            people into believing that data from 2005 to 2020 represents all historical data. However, 
-            I believe that it is “acceptable” to remove a few data points (just not entire sections of 
-            data), especially extreme outliers, to not let certain “flukes” or “random chances” affect 
-            the overall visualization.
+            visualizations through fair, thoughtful, and truthful representations. This means we not only
+            have to ensure accuracy in our visualizations, but also be mindful for how design choices can 
+            shape interpretation. Therefore, an ethical visualization strives to represent data faithfully,
+            respect audiences, acknowledge uncertainty and limitations, and consider the impacts of 
+            interpretations, meaning that it is a balance of technical accuracy and moral responsibility.
+            
+            Although it is difficult to draw any bounds on what is considered to be “fair” and “truthful” 
+            when one is trying to effectively persuade the other, I think that one bound is data
+            integrity. This means that we should always attempt to achieve clarity while preserving 
+            proportional relationships. Therefore, it is “acceptable” to remove a few extreme outliers
+            to simplify data, to not let certain flukes or random chances affect the overall visualization.
+            However, it becomes misleading when you manipulate axis, omit large sections of data, or 
+            cherry-pick certain data to purposefully create non-existing trends. That being said, 
+            sometimes persuasion and ethics can’t be cleanly separated. Thus, it is always best to reflect 
+            upon your design choices before publishing your work.
         </p>
       </section>
     </main>
