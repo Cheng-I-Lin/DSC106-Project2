@@ -113,6 +113,16 @@
         text-align: center;
         background: white;
 
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        span {
+            color: var(--color-neutral-40);
+            font-size: 0.5em;
+        }
+
         > figcaption {
           font: 500 75% var(--font-sans);
           background: var(--color-neutral-95);
@@ -145,30 +155,128 @@
   <body>
     <header>
       <h1>
-        <small>Assignment 4</small>
+        <small>Project 2</small>
         Persuasive or Deceptive Visualization?
       </h1>
 
-      <p><strong>Cheng-I Lin</strong> — <em>chl236@ucsd.edu</em></p>
+      <p>
+        <strong>Cheng-I Lin</strong> — <em>chl236@ucsd.edu</em> &emsp;
+        <strong>Dillon Bowes</strong> — <em>dmbowes@ucsd.edu</em> &emsp;
+        <strong>Vishal Paidi</strong> — <em>vpaidi@ucsd.edu</em>
+      </p>
     </header>
 
     <main>
-      <h2>Proposition: [STATE PROPOSITION]</h2>
+      <h2>
+        Proposition: Developed Countries Outsource Carbon Emissions from Developing Countries
+        in an Attempt to Portray Themseleves as Environmentally Friendly Nations.
+      </h2>
 
       <section>
         <h3>FOR the Proposition</h3>
 
         <figure>
-          <img src="IMAGE_FILENAME" alt="" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <img src="for_proposition.png" alt="Developed and developing countries net carbon emission import trend from 1995 to 2021"/>
+          <figcaption> 
+            From 1995 to 2021, developed countries consistently showed positive net imports of carbon 
+            emissions, averaging to 34.2 million tonnes. Conversely, developing countries follow a similar
+            yet opposite trend of negative net imports, averaging to -61.0 million tonnes, which indicates 
+            a net export. The trend indicates that when imports in developed countries increase, so does 
+            exports in developing countries, evidently denoting the correlation of carbon outsourcing of 
+            developed nations from developing nations (developed and developing status based on <a href=""></a>).
+
+            <br>
+            <span>
+                *Data collected by the International Monetary Fund (IMF) and the Organisation for Economic 
+                Co-operation and Development (OECD)
+            </span>
+          </figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+          <li>
+            Textual Annotations
+            <ul>
+                <li>Score: 1.5 (Earnest)</li>
+                <li>
+                    By including multiple annotations within the plot itself, we can highlight important 
+                    years (like 2006) and provide concrete numbers, making the takeaway clearer and more
+                    accessible. This help guides the viewer’s attention to the crucial factors that support 
+                    the main claim — outsourcing of emissions — by emphasizing and contextualizing the 
+                    significant difference of net carbon imports during 2006 between developed and developing
+                    countries. We also considered just implementing the annotations as concise paragraphs under
+                    the graph title. However, this misses the opportunity to directly interpret the context of the 
+                    specified years on the chart, limiting its effectiveness in allowing the viewers to grasp in which
+                    part of the graph is the annotations talking about (also increases the length of the above 
+                    paragraph, making it too wordy). The only potential bias lies in emphasizing a particular 
+                    year, which might overstate the importance of a single year, but the intent is explanatory 
+                    rather than manipulative.
+                </li>
+            </ul>
+          </li>
+          <li>
+            Color Contrast
+            <ul>
+                <li>Score: 1.5 (Earnest)</li>
+                <li>
+                    The use of blue and red colors makes a clear visual distinction between developed and 
+                    developing countries, allowing viewers to better understand which line represents which
+                    classification. The color blue symbolizes stability and professionalism, fitting for 
+                    developed countries. The color red symbolizes urgency and imbalance, reflecting the 
+                    challenges encountered by developing countries. This color contrast also stresses the 
+                    diverging differences between the two groups, helping viewers associate import as developed
+                    countries and export as developing countries. At first, we thought about using the color 
+                    green for developed countries, but green might be affiliated with environmentally friendly
+                    solutions, which might stray the focus away from our main argument that argues against 
+                    the eco-friendliness of developed countries. However, one possible downside of using the 
+                    color red is that it may subconsciously suggest “bad,” slightly moralizing the developing 
+                    countries’ role, but this was outweighed by clarity and interpretability.
+                </li>
+            </ul>
+          </li>
+          <li>
+            Single Y-Axis
+            <ul>
+                <li>Score: 2 (Earnest)</li>
+                <li>
+                    Through a common y-axis for the net imports of both developed and developing countries,
+                    the viewers can get a better understanding of import and export carbon flows over the years
+                    with direct comparisons, making it obvious that developed nations import carbon (positive, above 0) 
+                    and developing nations export carbon (negative, below 0). This also ensures that both trends are 
+                    fairly evaluated with the same scale, preventing axis manipulations that exaggerate the results. 
+                    Although we considered implementing two separate y-axes, we thought it would be less intuitive and 
+                    less visually striking since both imports and exports follow similar trends. Therefore, we decided not 
+                    to over complicate the visualization and used a single axis instead. Even though the single axis can 
+                    provide clarity, it may also be confusing for viewers as to how a negative carbon net <em>import</em>
+                    corresponds to <em>export</em> when the phrase is literally import, not export. However, this is covered
+                    through the explanation on top of the graph, stating that <em>Net Imports = Imports - Exports</em>. 
+
+                </li>
+            </ul>
+          </li>
+          <li>
+            Horizontal Averages <!-- & Vertical Differences  -->
+            <ul>
+                <li>Score: 2 (Earnest)</li>
+                <li>
+                    By displaying the mean values of net imports and exports for developed and developing countries, 
+                    viewers can comprehend not just the trend of the annual net imports, but the summary of the long
+                    term trends as well. The averages help reinforce the fact that the observed pattern isn’t 
+                    temporary or random, but rather a consistent trend of over 20 plus years. This is an honest 
+                    technique aggregate complex data into a clear message that suggests that developed countries have 
+                    always been importing carbon to lower their own carbon footprints, better persuading the viewers 
+                    for our main claim. We also considered the use of trend lines to show the general direction of 
+                    net imports over time, but the trends (positive/negative slopes) can be easily distinguished by
+                    viewers even without such lines. Moreover, the averages provide an additional data to better 
+                    contextualize the volume of net imports between developed and developing countries that viewers
+                    can easily compare with. However, a possible downside is that averages can oversimplify temporal 
+                    variations. Yet, their small text annotations and dotted lines prevent them from obscuring any 
+                    relevant trends over the years.
+                </li>
+            </ul>
+          </li>
         </ul>
       </section>
 
@@ -177,22 +285,72 @@
 
         <figure>
           <img src="IMAGE_FILENAME" alt="" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <figcaption>
+            
+            <br>
+            <span>
+                *Data collected by the International Monetary Fund (IMF) and the Organisation for Economic 
+                Co-operation and Development (OECD)
+            </span>
+          </figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+            <li>
+              RATIONALE_1
+              <ul>
+                  <li>Score: 0 (Earnest)</li>
+                  <li></li>
+              </ul>
+            </li>
+            <li>
+              RATIONALE_1
+              <ul>
+                  <li>Score: 0 (Earnest)</li>
+                  <li></li>
+              </ul>
+            </li>
+            <li>
+              RATIONALE_1
+              <ul>
+                  <li>Score: 0 (Earnest)</li>
+                  <li></li>
+              </ul>
+            </li>
         </ul>
       </section>
 
       <section>
         <h2>Final Reflection</h2>
 
-        <p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+        <p>Overall, our design process was pretty straightforward: it is to show the difference in net 
+            imported carobon between developed and developing countries over the years. Therefore, we 
+            settled on using a line graph to better show the trends of how nations import or export carbon
+            emissions. By doing so, we can effectively visualize how developed countries are importing
+            carbon from developing countries to decrease their own national carbon emission levels, thus 
+            making them look more eco-friendly. However, the more difficult part was to make a deceptive 
+            visualization that argues the opposite. We had many ideas as to how to aggregate and portray 
+            the data to show that both developed and developing countries have similar levels of emissions 
+            despite the imports and exports. For instance, we thought of using rolling averages to minimize 
+            peaks, changing country classification to include china and india as their gross outputs are 
+            considered developed even though that isn't the case per capita, and altering y-axis values 
+            to percent changes.
+        </p>
+        <p>
+            We think that the definition of “ethical analysis and visualization” is the development of 
+            visualizations through fair, thoughtful, and truthful representations. Although it is 
+            difficult to draw any bounds on what is considered to be “fair” and “truthful” when one is 
+            trying to persuade the other without misleading them, I think that one bound is that 
+            visualizations should include almost all valid datapoints. This is because in the case of 
+            Graph 3, I purposefully removed a lot of data from 1970 to 2004 just to show a trend that 
+            occurred for a short period of time instead of showing the entire picture, which can mislead 
+            people into believing that data from 2005 to 2020 represents all historical data. However, 
+            I believe that it is “acceptable” to remove a few data points (just not entire sections of 
+            data), especially extreme outliers, to not let certain “flukes” or “random chances” affect 
+            the overall visualization.
+        </p>
       </section>
     </main>
   </body>
